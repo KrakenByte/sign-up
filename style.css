@@ -29,6 +29,10 @@ body {
 h1 {
     color: var(--text-secondary);
     text-align: center;
+    font-weight: bolder;
+}
+h2 {
+  font-weight: bold;
 }
 .container {
   display: flex;
@@ -40,7 +44,35 @@ h1 {
 }
 .left {
   flex: 1;
+  position: relative; /* needed to position overlay inside */
 }
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Translucent overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 17, 23, 0.4); /* same as --background but transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo inside the overlay */
+.logo {
+  max-width: 60%;
+  max-height: 30%;
+  object-fit: contain;
+}
+
 .left img {
   width: 100%;
   height: 100%;
@@ -58,12 +90,15 @@ h1 {
   width: 80%;
   font-size: 1.2rem;
   line-height: 1.5;
+  margin-bottom: 2rem;
 }
 .signup{
   width:80%;
   border: 2px solid var(--border);
   padding: 1rem;
   border-radius: 2rem;
+  box-shadow: 0 0 12px rgba(255, 211, 105, 0.15), 
+            0 0 60px rgba(255, 211, 105, 0.04);
 }
 .account-info {
   display: flex;
@@ -117,4 +152,21 @@ input:-webkit-autofill:active {
 a:visited {
   text-decoration:currentColor;
   color: var(--text-secondary)
+}
+.credit {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+.credit a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
 }

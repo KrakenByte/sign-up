@@ -11,43 +11,46 @@
 <body>
     <div class="container">
         <div class="left">
-            <img src="eirik-skarstein-MJ8tq2wR5_A-unsplash.jpg" 
-            alt="Nocture Living Building">
-        </div>
+            <img src="eirik-skarstein-MJ8tq2wR5_A-unsplash.jpg" alt="Nocturne Living Building">
+            <div class="overlay">
+                <img src="logo-transparent.png" alt="Nocturne Living logo" class="logo">
+                <p class="credit">
+                    Photo by <a href="https://unsplash.com/@eiriksk" target="_blank" rel="noopener noreferrer">Eirik Skarstein</a> on <a href="https://unsplash.com/photos/buildings-with-lit-windows-reflect-in-dark-water-MJ8tq2wR5_A" target="_blank" rel="noopener noreferrer">Unsplash</a>
+                </p>
+            </div>
+         </div>
         <div class="right">
             <div class="info">
                 <h1>Nocturne Living</h1>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure fuga alias quod nisi assumenda beatae soluta ratione ut, perferendis id,
-                    eos quisquam aperiam amet molestias tenetur quaerat aut temporibus nihil,
-                    tempore deleniti magni. Blanditiis fuga expedita iste iusto sint veritatis
-                    delectus aspernatur dolorem mollitia, sed, temporibus explicabo deleniti 
-                    placeat dolor nemo distinctio fugiat possimus optio minima exercitationem
-                    obcaecati praesentium. Cumque.</p>
+                <p class="description">Nocturne Living offers thoughtfully designed spaces 
+                    where you can slow down and feel at ease. Tucked away from the noise,
+                    each home is built for comfort, calm, and everyday living. 
+                    Whether you're starting fresh or simply looking for a quieter pace,
+                    you'll find space here — to breathe, to rest, and to grow.</p>
             </div>
             <div class="signup">
                 <h2><mark>Join us.</mark></h2>
                 <form action="/sign-up-submit" method="post">
                     <section class="account-info first-row">
                         <label for="first_name">First Name
-                            <input type="text" name="user_first_name" id="first_name">
+                            <input type="text" name="user_first_name" id="first_name" required>
                         </label>
                         <label for="last_name">Last Name
-                            <input type="text" name="user_last_name" id="last_name">
+                            <input type="text" name="user_last_name" id="last_name" required>
                         </label>
                         <label for="email">Email
-                            <input type="email" name="user_email" id="email">
+                            <input type="email" name="user_email" id="email" required>
                         </label>
                     </section>
                     <section class="account-info second-row">
                         <label for="phone_number">Phone Number
-                            <input type="tel" name="user_phone" id="phone_number">
+                            <input type="tel" name="user_phone" id="phone_number" minlength="8" placeholder="98 765 432">
                         </label>
                         <label for="password">Password
-                            <input type="password" name="user_password" id="password">
+                            <input type="password" name="user_password" id="password" required minlength="5">
                         </label>
                         <label for="password_confirm">Confirm Password
-                            <input type="password" name="user_password_confirm" id="password_confirm">
+                            <input type="password" name="user_password_confirm" id="password_confirm" required>
                         </label>
                     </section>
                     <section>
