@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Sign-Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="eirik-skarstein-MJ8tq2wR5_A-unsplash.jpg" 
+            alt="Nocture Living Building">
+        </div>
+        <div class="right">
+            <div class="info">
+                <h1>Nocturne Living</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure fuga alias quod nisi assumenda beatae soluta ratione ut, perferendis id,
+                    eos quisquam aperiam amet molestias tenetur quaerat aut temporibus nihil,
+                    tempore deleniti magni. Blanditiis fuga expedita iste iusto sint veritatis
+                    delectus aspernatur dolorem mollitia, sed, temporibus explicabo deleniti 
+                    placeat dolor nemo distinctio fugiat possimus optio minima exercitationem
+                    obcaecati praesentium. Cumque.</p>
+            </div>
+            <div class="signup">
+                <h2><mark>Join us.</mark></h2>
+                <form action="/sign-up-submit" method="post">
+                    <section class="account-info first-row">
+                        <label for="first_name">First Name
+                            <input type="text" name="user_first_name" id="first_name">
+                        </label>
+                        <label for="last_name">Last Name
+                            <input type="text" name="user_last_name" id="last_name">
+                        </label>
+                        <label for="email">Email
+                            <input type="email" name="user_email" id="email">
+                        </label>
+                    </section>
+                    <section class="account-info second-row">
+                        <label for="phone_number">Phone Number
+                            <input type="tel" name="user_phone" id="phone_number">
+                        </label>
+                        <label for="password">Password
+                            <input type="password" name="user_password" id="password">
+                        </label>
+                        <label for="password_confirm">Confirm Password
+                            <input type="password" name="user_password_confirm" id="password_confirm">
+                        </label>
+                    </section>
+                    <section>
+                        <button type="submit" class="create-acc-btn">Create Account</button>
+                        <p>Already have an account? <a href="#" target="_blank" rel="noopener noreferrer">Log in</a></p>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

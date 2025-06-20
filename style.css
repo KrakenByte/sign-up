@@ -1,0 +1,120 @@
+:root {
+  /* Base background and surface */
+  --background: #0D1117;       /* dusk black */
+  --surface: #1A1F29;          /* soft graphite */
+
+  /* Accent and interactive elements */
+  --highlight: #FFD369;        /* windowlight amber */
+
+  /* Text colors */
+  --text-primary: #EAEAEA;     /* pale gray */
+  --text-secondary: #7D8590;   /* clouded silver */
+
+  /* Borders, lines, and subtle details */
+  --border: #313843;           /* steel shadow */
+
+  /* Alerts and errors */
+  --error: #BF616A;            /* muted ember */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color:var(--text-primary);
+}
+h1 {
+    color: var(--text-secondary);
+    text-align: center;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.left {
+  flex: 1;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right {
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info {
+  text-align: left;
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.signup{
+  width:80%;
+  border: 2px solid var(--border);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.account-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  justify-content: space-between;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-secondary);
+}
+label input {
+  margin-top: 0.5rem;
+}
+mark {
+  background-color: var(--highlight);
+  padding: 0.2rem;
+  padding-right: 1.2rem;
+}
+input {
+  background-color: var(--background);
+  border: 2px solid var(--border);
+  border-radius: 1rem;
+  color: var(--text-primary);
+  padding: 0.3rem;
+  padding-left: 0.6rem;
+  align-items: center;
+}
+input:focus {
+  outline: none;
+  background-color: var(--surface); /* prevent white flash on focus */
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 10000px var(--background) inset;
+  -webkit-text-fill-color: var(--text-primary);
+  border-radius: 1rem;
+  border: 2px solid var(--border);
+}
+.create-acc-btn {
+  background-color: var(--text-primary);
+  border: 2px solid var(--text-primary);
+  color:var(--background);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+a:visited {
+  text-decoration:currentColor;
+  color: var(--text-secondary)
+}
